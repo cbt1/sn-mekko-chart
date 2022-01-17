@@ -37,7 +37,8 @@
     "validate:locale": "node ./tools/validate-locale-strings.js",
     "prepare": "husky install",
     "preversion": "yarn build",
-    "version": "yarn spec && git add api-specifications"
+    "version": "yarn spec && git add api-specifications",
+    "release": "release-it --dry-run --disable-metrics --release-version"
   },
   "peerDependencies": {
     "@nebula.js/stardust": ">=1.7.0"
@@ -56,6 +57,7 @@
     "@nebula.js/cli-sense": "2.3.1",
     "@nebula.js/cli-serve": "2.3.1",
     "@nebula.js/stardust": "2.3.1",
+    "@release-it/conventional-changelog": "4.1.0",
     "babel-plugin-istanbul": "6.1.1",
     "eslint": "7.32.0",
     "eslint-config-airbnb-base": "14.2.1",
@@ -69,6 +71,7 @@
     "picasso-plugin-q": "1.4.2",
     "picasso.js": "1.4.2",
     "prettier": "2.5.1",
+    "release-it": "14.12.3",
     "scriptappy-from-jsdoc": "0.7.0"
   }
 }
